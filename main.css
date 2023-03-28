@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    margin-top: 26px;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+.all {
+    flex-grow: 1;
+}
+
+.header {
+    background: #213B7E;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: calc(50% - 1268px / 2);
+    padding-right: calc(50% - 1268px / 2)
+}
+
+.windows {
+    box-shadow: 23px 25px 10px -12px rgba(34, 60, 80, 0.57);
+    box-sizing: border-box;
+    position: absolute;
+    display: none;
+    padding-top: 26px;
+    width: 500px;
+    height: 418px;
+    top: 160px;
+    background: #FFFFFF;
+    border: 1px solid #213B7E;
+    margin-left: calc(50% - 500px / 2);
+    margin-right: calc(50% - 500px / 2)
+}
+
+.welcome {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    width: 158px;
+    height: 28px;
+}
+
+.login {
+    box-sizing: border-box;
+    width: 444px;
+    height: 55px;
+    border: 1px solid #808080;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding-left: 12px;
+}
+
+.password {
+    box-sizing: border-box;
+    width: 444px;
+    height: 55px;
+    border: 1px solid #808080;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #808080;
+    padding-left: 12px;
+}
+
+.button_windows {
+    width: 153px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA5D21;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.visible {
+    display: grid;
+    align-content: stretch;
+    justify-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    margin-left: 54px;
+}
+
+.menu_link {
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    padding: 28px 18px;
+}
+
+.menu_link_active {
+    color: #213B7E;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button {
+    width: 153px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EA5D21;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.content {
+    margin-top: 33px;
+    padding-left: calc(50% - 911px / 2);
+    padding-right: calc(50% - 911px / 2)
+}
+
+.title {
+    font-size: 30px;
+}
+
+.content_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_section {
+    width: 634px;
+}
+
+.subtitle {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    position: relative;
+    width: 129px;
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #646464;
+}
+
+.quotation_marks {
+    font-size: 64px;
+}
+
+.quotation-marks_left {
+    position: absolute;
+    left: -33px;
+    top: 7px;
+}
+
+.quotation-marks_right {
+    position: absolute;
+    top: 50px;
+    right: -22px;
+}
+
+.footer {
+    background: #213B7E;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 32px;
+}
+
+.footer_text {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.menu_text_active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*Students*/
+.content-students {
+    padding-left: calc(50% - 1202px / 2);
+    padding-right: calc(50% - 1202px / 2);
+}
+
+.subtitle-students {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 36px;
+    color: #000000;
+    margin-top: 37px;
+}
+
+.students {
+    margin-top: 24px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.student {
+    width: 200px;
+    position: relative;
+}
+
+.student__new {
+    position: absolute;
+    top: -10px;
+    right: -13px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background: #3AA828;
+    border-radius: 20px;
+    padding: 1px 2px 1px 5px;
+    text-transform: uppercase;
+}
+
+.student__name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/*contact*/
+.content-contacts {
+    margin-top: 33px;
+}
+
+.subtitle-contacts {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0px 200px 25px;
+}
+
+.contacts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    margin: 15px 200px;
+    max-width: 439px;
+    min-height: 102px;
+}
+
+/*about*/
+.content-about {
+    padding-left: calc(50% - 820px / 2);
+    padding-right: calc(50% - 820px / 2);
+    margin: 33px;
+}
+
+.content-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.invitation {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+@media (max-width: 1024px) {
+
+    /*стили для планшета*/
+    .header {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .menu {
+        margin-left: 0px;
+    }
+
+    .menu_link {
+        font-size: 18px;
+        padding: 20px 14px;
+    }
+
+    .windows {
+        top: 180px;
+    }
+
+    .content {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2)
+    }
+
+    .content_section {
+        width: 70%;
+    }
+
+    .content_info {
+        align-items: center;
+    }
+
+    .content-students {
+        padding-left: calc(50% - 736px / 2);
+        padding-right: calc(50% - 736px / 2)
+    }
+
+    .content-about {
+        margin: 20px;
+    }
+
+    .content-text {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .invitation {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+
+    .content-contacts {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .subtitle-contacts {
+        font-size: 24px;
+        margin: 0px 100px 20px;
+    }
+
+    .subtitle-students {
+        font-size: 24px;
+    }
+
+    .contacts {
+        font-size: 22px;
+    }
+
+    .address {
+        margin-left: 100px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /*стили для мобильного*/
+    .header {
+        padding-left: 0px;
+        padding-right: 16px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .windows {
+        top: 360px;
+    }
+
+    .content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .content_info {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .content_section {
+        width: 90%;
+    }
+
+    .subtitle-students {
+        font-size: 20px;
+        padding-left: 16px;
+    }
+
+    .students {
+        padding-left: 16px;
+        padding-right: 16px;
+        justify-content: center;
+    }
+
+    .content-text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    .content-about {
+        margin: 12px;
+    }
+
+    .invitation {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 8px;
+    }
+
+    .content-contacts {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    .subtitle-contacts {
+        font-size: 20px;
+        margin-left: 14px;
+    }
+
+    .address {
+        font-size: 12px;
+        margin-left: 14px;
+        max-width: 300px;
+    }
+}
